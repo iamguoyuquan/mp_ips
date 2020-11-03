@@ -1,0 +1,237 @@
+.container {
+  width: 654rpx;
+  padding-top: 42rpx;
+}
+
+.entrance {
+  display: flex;
+  margin-top: 70rpx;
+  margin-bottom: 44rpx;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.entrance .item {
+  width: 188rpx;
+  height: 208rpx;
+  border-radius: 32rpx;
+  text-align: center;
+  padding: 22rpx 0;
+  box-sizing: border-box;
+  /* margin-right: 30rpx; */
+}
+
+.entrance .item .img {
+  width: 120rpx;
+  margin: 0 auto 24rpx;
+}
+
+.entrance .item .img image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  color: rgba(0, 0, 0, .5);
+}
+
+.title image {
+  width: 44rpx;
+}
+
+
+
+.panel {
+  border-radius: 32rpx;
+  margin-bottom: 40rpx;
+
+}
+
+.panel-title {
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #F6F6F6;
+}
+
+.panel-body navigator {
+  font-size: 36rpx;
+  line-height: 2;
+  position: relative;
+  padding-left: 46rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 72rpx;
+}
+
+.panel-body navigator::before {
+  position: absolute;
+  content: "";
+  width: 10rpx;
+  height: 10rpx;
+  background: rgba(97, 235, 222, 1);
+  border-radius: 50%;
+  left: 10rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+picker view {
+  display: flex;
+  align-items: center;
+
+}
+
+picker image.icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 28rpx;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 40rpx 10rpx;
+  background: white;
+  border-radius: 20rpx;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.06);
+  height: 360rpx;
+}
+
+.card .title {
+  color: #0E5E5E;
+  margin: 0rpx 48rpx;
+  padding-top: 36rpx;
+}
+
+.card .main {
+  flex: 1;
+  display: flex;
+  color: #1FBBBC;
+  align-items: stretch;
+}
+
+.card .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 28rpx;
+  line-height: 40rpx;
+}
+
+.card .score {
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.card .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16rpx 0;
+  font-size: 24rpx;
+  color: #0E5E5E;
+  background: rgba(42, 194, 195, 0.08);
+}
+
+.card .days {
+  font-size: 36rpx;
+  text-decoration: underline;
+  margin: 0 10rpx;
+}
+
+.card .button {
+  font-size: 24rpx;
+  padding: 8rpx 24rpx;
+  margin: 0 8rpx;
+  background: #2AC2C3;
+  color: white;
+  border-radius: 36rpx;
+}
+
+.card .content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rpx 24rpx;
+}
+
+.card .block {
+  height: 80rpx;
+  width: 4rpx;
+  margin-top: 25%;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.card .info {
+  align-items: center;
+  padding-top: 60rpx;
+  padding-left: 48rpx;
+  text-decoration: underline;
+  color: #1FBBBC;
+}
+
+.card .level {
+  font-size: 60rpx;
+  padding: 0 10rpx;
+}
+
+.card .type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+  padding-top: 24rpx;
+  padding-left: 48rpx;
+  font-size: 24rpx;
+}
+
+.dot {
+  height: 12rpx;
+  width: 12rpx;
+  border-radius: 12rpx;
+  margin-right: 8rpx;
+}
+
+.banner {
+  display: flex;
+}
+
+.logo {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.login {
+  display: flex;
+  padding: 20rpx;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.phone {
+  color: #2AC2C3;
+  background: none;
+  border: none;
+}
+
+.text-login {
+  font-size: 40rpx;
+  font-weight: 500;
+  line-height: 52rpx;
+  color: #0E5E5E;
+}
+
+.text-desc {
+font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+}

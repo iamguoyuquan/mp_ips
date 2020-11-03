@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60rpx;
+}
+
+.title {
+    font-size: 48rpx;
+    font-weight: 500;
+    color: #0E5E5E;
+    margin-bottom: 40rpx;
+}
+
+.credit {
+    align-self: center;
+    font-size: 40rpx;
+    margin: 80rpx;
+    padding: 24rpx;
+    justify-content: center;
+    color: #2AC2C3;
+    background: #F2FBFB;
+    border-radius: 10rpx;
+}
+
+.num {
+    font-size: 72rpx;
+}
+
+.rules {
+    align-self: flex-end;
+    margin: 32rpx 0;
+}
+
+.line {
+    height: 20rpx;
+    background: #F6F6F6;
+}
+
+.history {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+    justify-content: stretch;
+    padding: 20rpx 0;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.type {
+    flex: 1;
+    font-size: 32rpx;
+}
+
+.name {
+    font-weight: 500;
+    line-height: 36rpx;
+}
+
+.date {
+    font-size: 24rpx;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.point {
+    color: rgba(0, 0, 0, 0.5);
+}

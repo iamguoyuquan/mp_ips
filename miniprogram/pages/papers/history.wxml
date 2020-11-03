@@ -1,0 +1,102 @@
+<view class="container">
+  <view class="timeview">
+    <navigator url="/pages/papers/act" open-type="redirect">
+      <text class="button">哮喘评估</text>
+    </navigator>
+    <navigator url="/pages/papers/mMRC" open-type="redirect">
+      <text class="button">慢阻肺评估</text>
+    </navigator>
+  </view>
+  <block wx:if="{{diseaseType==1}}">
+    <view class="textline">
+      <text class="title">ACT评分</text>
+      <text class="subtitle">最近1次</text>
+    </view>
+    <view class="card">
+      <view class="main">
+        <circle score="{{act}}" color="{{cardColor}}" />
+        <view class="content">
+          <view class="desc">{{actText}}</view>
+          <view class="score">ACT评分：{{act}}分</view>
+        </view>
+      </view>
+      <navigator url="/pages/papers/act" open-type="redirect">
+        <text class="button">去评估</text>
+      </navigator>
+    </view>
+  </block>
+  <block class="card" wx:elif="{{diseaseType==2}}">
+    <view class="textline">
+      <text class="title">慢阻肺评估</text>
+      <text class="subtitle">最近1次</text>
+    </view>
+    <view class="card">
+      <view class="main">
+        <view class="content">
+          <view class="title">mMRC</view>
+          <view class="info">
+            <text class="level">{{mMRC}}</text>
+            级
+          </view>
+          <view class="type">
+            <view class="dot" style="background: {{cardColor}}" />
+            {{mMRCText}}
+          </view>
+        </view>
+        <view class="block" />
+        <view class="content">
+          <view class="title">CAT</view>
+          <view class="info">
+            <text class="level">{{cat}}</text>
+            分
+          </view>
+          <view class="type">
+            <view class="dot" style="background: {{cardColor}}" />
+            {{catText}}
+          </view>
+        </view>
+      </view>
+      <navigator url="/pages/papers/mMRC" open-type="redirect">
+        <text class="button">去评估</text>
+      </navigator>
+    </view>
+  </block>
+  <echart id="echart" canvas-id="ecanvas" ec="{{ ec }}" />
+</view>
+<view class="history">
+  <view class="line" />
+  <view class="text">评估历史</view>
+  <view class="line" />
+</view>
+<view class="dotcontainer" wx:if="{{diseaseType==1}}">
+  <view class="timeline">
+    <view wx:for="{{chartData}}" class="timeview">
+      <view class="date {{index==0?'active':''}}">
+        <view>{{item.dateYear}}</view>
+        <view>{{item.dateMDay}}</view>
+      </view>
+      <view class="dot {{index==0?'dotactive':''}}" />
+      <view class="block">
+        <view style="font-weight: 500">ACT: {{item.act}} 分</view>
+        <view>{{item.actText}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="dotline" />
+</view>
+<view class="dotcontainer" wx:if="{{diseaseType==2}}">
+  <view class="timeline">
+    <view wx:for="{{chartData}}" class="timeview">
+      <view class="date {{index==0?'active':''}}">
+        <view>{{item.dateYear}}</view>
+        <view>{{item.dateMDay}}</view>
+      </view>
+      <view class="dot {{index==0?'dotactive':''}}" />
+      <view class="block">
+        <view style="font-weight: 500">mMRC&CAT:</view>
+        <view>{{item.mMRC}}级 {{item.mMRCText}} {{item.copd}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="dotline" />
+</view>

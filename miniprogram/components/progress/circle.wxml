@@ -1,0 +1,5 @@
+<view class='progress-box'>
+  <canvas class="progress-bg" canvas-id="canvasProgressbg" /> 
+  <canvas canvas-id="canvasProgress" />
+  <text class='progress-text' style="color: {{color}}"> {{score}}</text>
+</view>

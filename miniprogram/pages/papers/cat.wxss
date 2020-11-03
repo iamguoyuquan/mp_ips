@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 36px;
+}
+
+.title {
+    font-size: 32px;
+    color: #13B3B4
+}
+
+.subtitle {
+    margin: 16px 0;
+    font-size: 14px;
+    color: #13B3B4
+}
+
+.question {
+    padding: 10px 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.question-index {
+    font-size: 30rpx;
+    color: #13B3B4
+}
+
+.question-num {
+    font-size: 60rpx;
+}
+
+.question-line {
+    display: flex;
+    margin-top: 40rpx;
+    align-items: flex-start;
+}
+
+.question-title {
+    flex: 3;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.line {
+    flex: 1;
+    background: black;
+    height: 4rpx;
+    margin: 20rpx 48rpx;
+    width: 60%;
+}
+
+.question-status {
+    font-size: 14px;
+    color: gray;
+    margin: 20rpx 10rpx;
+}
+
+.slider {
+    color: #13B3B4;
+}
+
+.submit {
+    text-align: center;
+    background: #13B3B4;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40rpx;
+}
+
+
+.popup {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.popup-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 60%;
+    max-width: 600rpx;
+    border-radius: 10rpx;
+    box-sizing: bordre-box;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background: white;
+    padding: 60rpx 10rpx;
+}
+
+.popup-item {
+    display: flex;
+    width: 80%;
+    font-weight: 500;
+    align-items: center;
+    padding: 10rpx 30rpx;
+    line-height: 44rpx;
+}
+
+.popup-score {
+    flex: 1;
+    font-size: 56rpx;
+}
+
+.popup-desc {
+    display: flex; 
+    flex: 2;
+    flex-direction: column;
+    padding: 0 40rpx;
+}
+
+.popup-title {
+    color: black;
+}
+
+.popup-content {
+    margin: 30rpx 20rpx;
+    background: white;
+    border-radius: 20rpx;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.06);
+    color:  rgba(0, 0, 0, 0.5);
+    line-height: 36rpx;
+    font-size: 28rpx;
+    padding: 24rpx 16rpx;
+    padding-bottom: 60rpx;
+}
+
+.popup-btn {
+    text-align: center;
+    background: #13B3B4;
+    color: white;
+    text-align: center;
+    border-radius: 48rpx;
+    padding: 20rpx 0rpx;
+    width: 40%;
+}
+
+.popup-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+}

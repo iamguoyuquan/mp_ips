@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="title">
+    <text style="text-decoration: underline;">C</text>AT评估
+  </view>
+  <view class="subtitle">慢性阻塞性肺疾病评分</view>
+  <view class="question" wx:for="{{cats}}" wx:for-item="cat" wx:key="{{cat.id}}">
+    <view class="question-index">
+      <text class="question-num">{{cat.id}}</text>
+      /8
+    </view>
+    <view class="question-line">
+      <text class="question-title">{{cat.content1}}</text>
+      <view class="line"></view>
+      <text class="question-title">{{cat.content2}}</text>
+    </view>
+    <view class="question-line">
+      <text class="question-status">轻（程度）</text>
+      <view style="flex: 1" />
+      <text class="question-status">重</text>
+    </view>
+    <radio-group id="{{index}}" bindchange="sliderChange" style="display: flex; justify-content: space-between">
+      <label wx:for="{{cat.options}}" wx:for-item="item" wx:key="{{item.point}}">
+        <radio color="#008080" value="{{item.point}}" />
+        {{item.point}}
+      </label>
+    </radio-group>
+  </view>
+  <view class="popup" hidden="{{hidden}}">
+    <view class='popup-container'>
+      <image class="popup-bg" src="/static/image/popup_{{type}}.png" mode="widthFix" />
+      <view class="popup-item" style="color: {{color}}">
+        <view class="popup-score">{{mMRC}}级</view>
+        <view class="popup-desc">
+          <text class="popup-title">mMRC</text>
+          <text class="popup-text">{{mMRCText}}</text>
+        </view>
+      </view>
+      <view class="popup-item" style="color: {{color}}">
+        <view class="popup-score">{{cat}}</view>
+        <view class="popup-desc">
+          <text class="popup-title">COPD</text>
+          <text class="popup-text">{{copdText}}</text>
+        </view>
+      </view>
+      <view class="popup-content">{{content}}</view>
+      <text class="popup-btn" bindtap='submit'>确认</text>
+    </view>
+  </view>
+  <button class="submit" bindtap="showPopup" disabled="{{disable}}">已完成并提交</button>
+</view>

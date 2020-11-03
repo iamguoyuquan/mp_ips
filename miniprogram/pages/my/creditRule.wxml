@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="title">积分规则</view>
+    <view class="rule">1. 成功入组 +5分</view>
+    <view class="rule">2. 完成并提交评估报告 +2分/次</view>
+    <view class="rule">3. 完成打卡 +1分/次</view> 
+</view>

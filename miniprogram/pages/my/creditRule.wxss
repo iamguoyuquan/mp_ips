@@ -1,0 +1,9 @@
+.title {
+  margin: 36rpx 0;
+  font-size: 40rpx;
+  font-weight: 500;
+}
+
+.rule {
+    line-height: 52rpx;
+}

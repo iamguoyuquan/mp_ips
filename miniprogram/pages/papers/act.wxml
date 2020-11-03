@@ -1,0 +1,35 @@
+<view class="container">
+  <image class="bg" src="/static/image/bg_act.png" mode="widthFix" />
+  <view class="title">
+    <text style="text-decoration: underline;">A</text>CT评估
+  </view>
+  <view class="subtitle">哮喘控制测试表</view>
+  <view wx:for="{{acts}}" wx:key="act">
+    <view class="question-index">
+      <text class="question-num">{{item.id}}</text>
+      /5
+    </view>
+    <view class="question-title">
+      <text>{{item.content}}</text>
+    </view>
+    <radio-group id="{{index}}" bindchange="radioChange">
+      <label wx:for="{{item.options}}" wx:for-item="question" wx:key="option">
+        <view class="question {{item.choose==index?'question-active':''}}" id="{{index}}">
+          <text class="question-text">{{question.value}}</text>
+          <text class="question-point">{{question.point}}分</text>
+          <radio color="#008080" class="question-radio" value="{{index}}" checked="{{item.choose==index}}" />
+        </view>
+      </label>
+    </radio-group>
+  </view>
+  <button class="submit" bindtap="showPopup" disabled="{{disable}}">已完成并提交</button>
+</view>
+<view class="popup" hidden="{{hidden}}">
+  <view class='popup-container'>
+    <image class="popup-bg" src="/static/image/popup_{{type}}.png" mode="widthFix" />
+    <circle score="{{score}}" color="{{color}}" />
+    <view class="popup-title" style="color: {{color}}">{{title}}</view>
+    <view class="popup-content">{{content}}</view>
+    <text class="popup-btn" bindtap='submit'>确认</text>
+  </view>
+</view>

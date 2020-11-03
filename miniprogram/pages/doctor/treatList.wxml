@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="btn" bindtap="onNew">新增就诊记录</view>
+  <view class="dotcontainer">
+    <view class="timeline">
+      <view wx:for="{{history}}" wx:for-index="hid" class="timeview">
+        <view class="date {{index==0?'active':''}}">{{item.timeStr}}</view>
+        <view class="dot {{index==0?'dotactive':''}}" />
+        <view class="image-container">
+          <view class='pic' wx:for="{{item.urls}}" wx:for-item="url" wx:key="*this">
+            <image class='weui-uploader__img' src="{{url}}" data-index="{{index}}" data-hid="{{hid}}" mode="aspectFill" bindtap="previewImg" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="dotline" />
+  </view>
+</view>

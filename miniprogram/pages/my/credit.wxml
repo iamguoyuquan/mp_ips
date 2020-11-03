@@ -1,0 +1,26 @@
+<view class="container">
+    <view class="title">
+       我当前的积分
+    </view>
+    <view class="credit">
+       <text class="num">{{credit}}</text>分
+    </view>
+    <navigator class="rules" url="/pages/my/creditRule">
+       *积分规则
+    </navigator>
+</view>
+
+<view class="line" />
+
+<view class="container">
+    <view class="title">
+       积分历史
+    </view>
+    <view wx:for="{{history}}" class="history">
+       <view class="type">
+           <view class="name" >{{item.type}}</view>
+           <view class="date">{{item.timeStr}}</view>
+       </view>
+       <view class="point">{{item.point}}分</view>
+    </view>
+</view>

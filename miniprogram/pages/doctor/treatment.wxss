@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 60rpx;
+}
+
+.title {
+    font-size: 40rpx;
+    font-weight: 500;
+    color: #094B4C;
+    line-height: 48rpx;
+}
+
+.date-picker {
+    background: #F6F6F6;
+    border: 1px solid #D6D6D6;
+    border-radius: 8rpx;
+    margin: 20rpx 10rpx;
+    padding: 20rpx 10rpx;
+    color: #094B4C;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 28rpx 0;
+}
+
+.button {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 12rpx 40rpx;
+    margin-right: 24rpx;
+    border: 1px solid #D6D6D6;
+    border-radius: 8rpx;
+    font-size: 28rpx;
+}
+
+.active{
+    color: white;
+    background: #13B3B4;
+    border: 0;
+}
+
+.next {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    align-self: stretch;
+    border-radius: 48rpx;
+    padding: 20rpx 0;
+    margin: 36rpx 0;
+    color: white;
+    background: #2AC2C3;
+    font-size: 28rpx;
+}

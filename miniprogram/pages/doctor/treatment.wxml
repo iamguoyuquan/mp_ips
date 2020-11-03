@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="title">1. 你最近就诊日期是哪天</view>
+    <picker mode="date" value="{{add_day}}" bindchange="bindDateChange">
+        <view class="date-picker">
+            {{add_day===""?"请选择": add_day}}
+        </view>
+    </picker>
+    <view class="title">2. 报到来源</view>
+	<view class="row">
+		<view class="button {{source==1?'active':''}}" bindtap="onMZ">门诊</view>
+		<view class="button {{source==2?'active':''}}" bindtap="onZY">住院</view>
+	</view>
+    <view class="title">3. 医生告知复诊时间了吗？</view>
+ 	<view class="row">
+		<view class="button {{sub_vister==1?'active':''}}" bindtap="onYes" >是</view>
+		<view class="button {{sub_vister==0?'active':''}}" bindtap="onNo" >否</view>
+	</view>
+    <picker mode="date" value="{{sub_vister_time}}" start="{{nowStr}}" bindchange="bindSubVisitTimeChange">
+        <view class="date-picker" wx:if="{{sub_vister==1}}">
+            {{sub_vister_time===""?"请选择": sub_vister_time}}
+        </view>
+    </picker>
+	<view class="next" bindtap="onNext">下一步</view>
+</view>

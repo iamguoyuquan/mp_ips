@@ -1,0 +1,142 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "appid": "wx3a184d7599515c1e",
+  "projectname": "AZ",
+  "libVersion": "2.10.4",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "id": 1,
+          "name": "pages/my/join",
+          "pathName": "pages/my/join",
+          "query": "doctorId=1",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/science/index",
+          "pathName": "pages/science/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 3,
+          "name": "pages/post/index",
+          "pathName": "pages/post/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/medicClock/index",
+          "pathName": "pages/medicClock/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/daka/daka",
+          "pathName": "pages/daka/daka",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 7,
+          "name": "pages/doctor/index",
+          "pathName": "pages/doctor/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 8,
+          "name": "pages/my/index",
+          "pathName": "pages/my/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/papers/mMRC",
+          "pathName": "pages/papers/mMRC",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 10,
+          "name": "pages/papers/act",
+          "pathName": "pages/papers/act",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/papers/history",
+          "pathName": "pages/papers/history",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/doctor/treatList",
+          "pathName": "pages/doctor/treatList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/login",
+          "pathName": "pages/index/login",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

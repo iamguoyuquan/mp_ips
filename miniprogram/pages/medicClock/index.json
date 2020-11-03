@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "杏树健康",
+  "usingComponents": {
+    "ren-calendar": "../../components/ren-calendar/index"
+  }
+}

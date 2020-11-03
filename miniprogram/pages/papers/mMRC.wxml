@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="title"><text style="text-decoration: underline;">m</text>MRC评估</view>
+  <view class="subtitle">改良呼吸指数评估</view>
+  <radio-group bindchange="radioChange">
+    <label wx:for="{{mMRC}}" wx:key="name" wx:for-item="item">
+      <view  class="question {{radioCheck==index?'question-active':''}}" id="{{index}}">
+        <text class="question-badge">{{item.name}}</text>
+        <text class="question-text">{{item.value}}</text> 
+        <radio color="#13B3B4" class="question-radio" value="{{index}}" checked="{{radioCheck==index}}" />
+      </view>
+    </label>
+  </radio-group>
+</view>

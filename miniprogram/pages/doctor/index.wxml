@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="title">你是否有新的就诊记录？</view>
+  <view class="row">
+    <view class="button {{hasNew==true?'active':''}}" bindtap="onYes">是</view>
+    <view class="button {{hasNew==true?'':'active'}}" bindtap="onNo">否</view>
+  </view>
+  <block wx:if="{{prev}}">
+    <view class="prev">您最近一次就诊记录：{{prev}}</view>
+  </block>
+  <view class="next" bindtap="onNext">下一步</view>
+</view>

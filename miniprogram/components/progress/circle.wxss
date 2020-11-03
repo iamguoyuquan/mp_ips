@@ -1,0 +1,26 @@
+.progress-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.progress-bg {
+  position: absolute;
+}
+
+.progress-text{ 
+  position: absolute; 
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  color: #1FBBBC;
+  text-decoration: underline; 
+  font-size: 52rpx;
+  letter-spacing: 2rpx
+}

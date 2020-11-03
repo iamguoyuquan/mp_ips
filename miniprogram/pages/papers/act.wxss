@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 36px;
+}
+
+.title {
+    font-size: 32px;
+    color: #13B3B4
+}
+
+.subtitle {
+    margin: 40rpx 0;
+    font-size: 14px;
+    color: #13B3B4
+}
+
+.question-index {
+    margin-top: 44rpx;
+    font-size: 30rpx;
+    color: #13B3B4
+}
+
+.question-num {
+    font-size: 60rpx;
+}
+
+.question-title {
+    margin: 40rpx 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    padding: 10px 8px;
+    margin: 18px 0;
+    background: #F7F7F7;
+    border-radius: 6rpx;
+}
+
+.question-active {
+    background: #F1FAF9;
+}
+
+.question-text {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.question-point {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 24rpx;
+    margin: 0 10px;
+}
+.submit {
+    text-align: center;
+    background: #13B3B4;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40rpx;
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+}
+
+.block {
+    background: #F7F7F7;
+    height: 12rpx;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    margin: 40rpx 40rpx;
+}
+
+.popup {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.popup-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 60%;
+    max-width: 600rpx;
+    border-radius: 10rpx;
+    box-sizing: bordre-box;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background: white;
+    padding: 60rpx 10rpx;
+}
+
+circle {
+    margin: 0 10rpx;
+}
+
+.popup-title {
+    margin: 32rpx 10rpx;
+    text-align: center;
+    font-weight: 500;
+}
+
+.popup-content {
+    margin: 20rpx 40rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: rgba(0, 0, 0, .5);
+}
+
+.popup-btn {
+    text-align: center;
+    background: #13B3B4;
+    color: white;
+    text-align: center;
+    border-radius: 48rpx;
+    padding: 20rpx 100rpx;
+}
+
+.popup-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+}

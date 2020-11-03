@@ -1,0 +1,42 @@
+.container {
+    padding-top: 36px;
+}
+
+.title {
+    font-size: 32px;
+    color: #13B3B4
+}
+
+.subtitle {
+    margin: 16px 0;
+    font-size: 14px;
+    color: #13B3B4
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    padding: 10px 8px;
+    margin: 8px 0;
+    background: #F7F7F7;
+    border-radius: 4px;
+}
+
+.question-active {
+    background: #F1FAF9;
+}
+
+.question-badge {
+    padding: 2px 8px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+}
+
+.question-text {
+    flex: 1;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 10px;
+}

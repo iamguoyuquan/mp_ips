@@ -1,0 +1,75 @@
+
+.container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+.btn {
+  width: 40%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  align-self: center;
+  border-radius: 48rpx;
+  padding: 20rpx 0;
+  margin: 36rpx 0;
+  color: white;
+  background: #2AC2C3;
+  font-size: 28rpx;
+}
+
+.dotcontainer {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.dotline {
+  position: absolute;
+  left: 16%;
+  height: 100%;
+  border: 1rpx dashed rgba(0, 0, 0, 0.25);
+}
+
+.timeline {
+  font-size: 28rpx;
+  width: 100%;
+  align-items: stretch;
+}
+
+.timeview {
+  display: flex;
+  margin: 20rpx 0;
+}
+
+.timeline .date {
+  flex: 1;
+}
+
+.timeline .active {
+  font-weight: 500;
+  color: #12B2B3;
+}
+
+.timeline .dot {
+  z-index: 1;
+  height: 32rpx;
+  width: 32rpx;
+  border-radius: 64rpx;
+  background: #D8D8D8;
+  margin: 0 24rpx;
+}
+
+.timeline .dotactive {
+  background: #12B2B3;
+}
+
+.image-container {
+  flex: 8;
+}
+
+.pic {
+  float: left;
+  position: relative;
+  margin: 10rpx;
+}

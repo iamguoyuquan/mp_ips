@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": { 
+    "circle": "../../components/progress/circle"
+  }
+}

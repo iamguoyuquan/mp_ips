@@ -1,0 +1,7 @@
+<view class="container">
+  <image src="/assets/images/logo.png" mode="aspectFit" />
+  <button class='btn' type="primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+    微信手机号快捷登录
+  </button>
+  <view>您的登录已过期，请重新登录</view>
+</view>

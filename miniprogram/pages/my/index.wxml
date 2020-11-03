@@ -1,0 +1,129 @@
+<view class="container">
+  <view wx:if="{{userInfo}}" class="infocard">
+    <view class="header">
+      <open-data type="userAvatarUrl" class="avatar" />
+      <view class="name">
+        <view class="title">{{userInfo.patient.name}}</view>
+        <view class="time">入组时间：{{createStr}}</view>
+      </view>
+      <navigator class="score" url="/pages/my/credit">
+        <text class="credit">{{point}}</text>
+        <text class="desc">已获得健康积分</text>
+      </navigator>
+    </view>
+    <view class="row">
+      疾病情况：
+      <text class="uname">{{userInfo.patient.disease}}</text>
+    </view>
+    <view class="row">
+      主治医师：
+      <text class="uname">{{doctorInfo.name}}</text>
+    </view>
+    <view class="footer">
+      <navigator class="item" url="/pages/myInformation/index">
+        <image class="icon" src="/static/image/index/index_1.png" mode="cover" />
+        <text>我的基本信息</text>
+      </navigator>
+      <view class='line' />
+      <view class="item" bindtap="gotoTreat">
+        <image class="icon" src="/static/image/index/index_2.png" mode="cover" />
+        <text>我的病例档案</text>
+      </view>
+    </view>
+  </view>
+  <navigator wx:else class="banner" url="/pages/index/login?type=0">
+    <image class="logo" src="/assets/images/login.png" mode="aspectFit" />
+    <view class="login">
+      <view class="text-login">点击登录</view>
+      <view class="text-desc">您的登录已过期，请重新登录</view>
+    </view>
+  </navigator>
+  <view class="title">本周康复进展</view>
+  <view class="cardline">
+    <view class="card" bindtap='gotoMedical'>
+      <text class="score">{{sign}}%</text>
+      <text class="type">用药打卡</text>
+    </view>
+    <view class="card" bindtap='gotoHistory'>
+      <text class="score">{{assess}}%</text>
+      <text class="type">量表评估</text>
+    </view>
+  </view>
+  <view class="cardline">
+    <view class="card" bindtap="gotoMsg">
+      <text class="score">{{leave_message}}次</text>
+      <text class="type">留言</text>
+    </view>
+    <view class="card" bindtap="gotoFav">
+      <text class="score">{{read_count}}次</text>
+      <text class="type">阅读文章</text>
+    </view>
+  </view>
+  <!-- <view class="header">
+    <view class="avatar">
+      <image bindtap="uploadAvatar" src='{{ userInfo.avatar }}'></image>
+    </view>
+    <view class="account">
+      <navigator url="profile">
+        <view class="zan-font-16">
+          {{ userInfo.nickname }}
+        </view>
+      </navigator>
+      <view class="zan-font-12" wx:if="{{ userInfo.id }}">{{ userInfo.bio ? userInfo.bio : '写点什么介绍下自己吧!' }}</view>
+      <button wx:if="{{ userInfo.id==0 }}" open-type="getUserInfo" bindgetuserinfo="login" class="zan-btn zan-btn--mini btn-auth">立即登录</button>
+    </view>
+  </view> -->
+  <!-- <view class="zan-panel">
+    <view class="zan-row my-statistics">
+      <view class="zan-col zan-col-8">
+        <view bindtap="showTips" data-type="balance">
+          <view class="nums">￥{{ userInfo.balance || 0 }}</view>
+          <view class="placeholder">余额</view>
+        </view>
+      </view>
+      <view class="zan-col zan-col-8">
+        <view bindtap="showTips" data-type="score">
+          <view class="nums">{{ userInfo.score }}</view>
+          <view class="placeholder">积分</view>
+        </view>
+      </view>
+      <view class="zan-col zan-col-8">
+        <view bindtap="showTips" data-type="level">
+          <view class="nums">Lv.{{ userInfo.level }}</view>
+          <view class="placeholder">等级</view>
+        </view>
+      </view>
+    </view>
+  </view> 
+  <navigator class="navigator" url="/pages/myInformation/index">
+    <text>我的基本信息</text>
+    <text class="fa fa-chevron-right"></text>
+  </navigator>
+  <navigator class="navigator" url="/pages/doctor/index">
+    我的咨询
+    <text class="fa fa-chevron-right"></text>
+  </navigator>
+  <view class="navigator" bindtap="gotoFav">
+    我的收藏
+    <text class="fa fa-chevron-right"></text>
+  </view>
+  <navigator class="navigator" url="/pages/papers/history">
+    评估历史
+    <text class="fa fa-chevron-right"></text>
+  </navigator>
+  <navigator class="navigator" url="/pages/my/credit">
+    我的积分
+    <text class="fa fa-chevron-right"></text>
+  </navigator> -->
+  <!-- <navigator class="" url="">
+     我的随访
+     <text class="fa fa-chevron-right"></text>
+</navigator>
+<navigator class="" url="">
+     我的指标
+     <text class="fa fa-chevron-right"></text>
+</navigator> -->
+  <!-- <view class="weui-footer weui-footer_fixed-bottom">
+<button type="primary" class="weui-btn" open-type="getPhoneNumber"  bindgetphonenumber="getPhoneNumber">登录</button>
+</view> -->
+</view>

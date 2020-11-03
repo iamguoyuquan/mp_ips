@@ -1,0 +1,194 @@
+.container {
+  width: 750rpx;
+  padding: 0rpx 40rpx;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: #F6F6F6;
+}
+
+image {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.infocard {
+  display: flex;
+  flex-direction: column;
+  background: #F0F6F6;
+  border-radius: 10rpx;
+  margin: 40rpx 0;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.06);
+}
+
+.infocard .header {
+  display: flex;
+  flex-direction: row;
+  color: #0E5E5E;
+  font-size: 32rpx;
+  margin: 36rpx 36rpx;
+}
+
+.infocard .row {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 32rpx;
+  margin: 0 36rpx;
+}
+
+.infocard .footer {
+  display: flex;
+  flex-direction: row;
+  color: #012642;
+  font-size: 32rpx;
+  padding: 32rpx 0;
+  margin: 16rpx 0;
+  border-top: 4rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.infocard .avatar {
+  width: 110rpx;
+  height: 110rpx;
+  font-size: 20rpx;
+}
+
+.infocard .name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 24rpx;
+}
+
+.infocard .time {
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 30rpx;
+}
+
+.infocard .score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+}
+
+.infocard .credit {
+  font-size: 40rpx;
+  color: #2AC2C3;
+}
+
+.infocard .desc {
+  font-size: 20rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: 500;
+  line-height: 52rpx;
+  color: #0E5E5E;
+}
+
+.uname {
+  font-weight: 500;
+  line-height: 52rpx;
+  color: #0E5E5E;
+}
+
+.infocard .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infocard .line {
+  width: 4rpx;
+  align-self: stretch;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.cardline {
+  display: flex;
+  justify-content: space-between;
+  margin: 40rpx 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320rpx;
+  padding: 80rpx 0;
+  background: white;
+
+  border-radius: 12rpx;
+  box-shadow: 0px 5px 10px 0px rgba(0, 64, 128, 0.04);
+
+}
+
+.card .score {
+  font-size: 56rpx;
+  line-height: 72rpx;
+  color: #12B2B3;
+
+}
+
+.card .type {
+  line-height: 44rpx;
+  color: #0E5E5E;
+}
+
+.navigator {
+  height: 126rpx;
+  font-size: 36rpx;
+  color: rgba(0, 0, 0, 1);
+  padding: 0 46rpx;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigator+.navigator {
+  border-top: solid 1px #e5e5e5;
+}
+
+.navigator .fa {
+  color: #C7C7CC;
+  font-size: 24rpx;
+}
+
+.weui-footer {
+  padding: 48rpx;
+}
+
+.banner {
+  display: flex;
+  margin: 40rpx 0;
+}
+
+.logo {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.login {
+  display: flex;
+  padding: 20rpx;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-login {
+  font-size: 40rpx;
+  font-weight: 500;
+  line-height: 52rpx;
+  color: #0E5E5E;
+}
+
+.text-desc {
+font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+}

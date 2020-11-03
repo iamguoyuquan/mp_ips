@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "评估历史",
+  "usingComponents": {
+    "echart": "../../components/ec-canvas/ec-canvas",
+    "circle": "../../components/progress/circle"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "杏树健康",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "circle": "../../components/progress/circle",
+    "shareImage": "../../components/shareImage/index",
+    "dataListBox": "../../components/dataListBox/index"
+  }
+}
